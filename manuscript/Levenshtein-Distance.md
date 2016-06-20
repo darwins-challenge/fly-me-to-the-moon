@@ -93,5 +93,9 @@ pub fn recursive(u: &str, v: &str) -> u32 {
  `u` | 2 | 2   | 2   | 3   | 4   | 5   | 6
  `l` | 3 | 3   | 3   | 3   | 4   | 5   | 6
  `k` | 4 | 4   | 4   | 4   | 4   | 5   | 6
- 
+
+## Implementations
+Implement the different algorithms discussed in this chapter to determine the
+Levenshtein distance.
+
 [levenshtein]: https://en.wikipedia.org/wiki/Levenshtein_distance 
