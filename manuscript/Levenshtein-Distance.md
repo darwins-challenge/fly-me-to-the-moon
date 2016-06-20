@@ -82,4 +82,16 @@ pub fn recursive(u: &str, v: &str) -> u32 {
 }
 ```
 
+## Exercises
+1. Calculate the Levenshtein distance between `kangaroo` and `koala`.
+2. Below you can find a matrix after the Levenshtein algorithm finished.
+   Determine the necessary steps to transform `banner` into `hulk`.
+   
+     |   | `b` | `a` | `n` | `n` | `e` | `r`
+     | 0 | 1   | 2   | 3   | 4   | 5   | 6 
+ `h` | 1 | 1   | 2   | 3   | 4   | 5   | 6
+ `u` | 2 | 2   | 2   | 3   | 4   | 5   | 6
+ `l` | 3 | 3   | 3   | 3   | 4   | 5   | 6
+ `k` | 4 | 4   | 4   | 4   | 4   | 5   | 6
+ 
 [levenshtein]: https://en.wikipedia.org/wiki/Levenshtein_distance 
