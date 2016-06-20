@@ -11,9 +11,9 @@ of string.
    insert `s` at the end of `banana` to get `bananas`.
 2. For the pair `spoons` and `spoon` the Levenshtein distance is also 1 because
    we can delete the final `s` in `spoons` and get `spoon`.
-3. Once again the Levenshtein distance is 1 for the strings `saloon` and
-   `lagoon`. This time because we can edit the `s` into an `l` and change
-   `saloon` into `lagoon`.
+3. this time the Levenshtein distance is 2 for the strings `saloon` and
+   `lagoon`. We need to change the `s` in a `l` and the `l` into a `g` in order
+   to change `saloon` into `lagoon`.
 
 ## Patterns
 When you think about calculating Levenshtein distances it is nice to notice some
@@ -51,11 +51,11 @@ of the following choices
 Because we know all these distances we could just take the minimum between them.
 
 ## Algorithm
-In each of the examples in the introduction we had pairs of strings with a
-Levenshtein distance of 1. Calculating the Levenshtein distance between
-arbitrary strings is a bit more involved. In this section we will discuss
-various algorithms that calculates the Levenshtein distance between strings,
-exploiting the patterns we noticed.
+In each of the examples in the introduction we had pairs of strings for which
+the Levenshtein distance was easily calculated. Calculating the Levenshtein
+distance between arbitrary strings is a bit more involved. In this section we
+will discuss various algorithms that calculates the Levenshtein distance between
+strings, exploiting the patterns we noticed.
 
 ### Recursive
 The patterns that we noticed relates the Levenshtein distance between string to
