@@ -50,7 +50,7 @@ of the following choices
 
 Because we know all these distances we could just take the minimum between them.
 
-## Algorithm
+## Algorithms
 In each of the examples in the introduction we had pairs of strings for which
 the Levenshtein distance was easily calculated. Calculating the Levenshtein
 distance between arbitrary strings is a bit more involved. In this section we
@@ -81,6 +81,86 @@ pub fn recursive(u: &str, v: &str) -> u32 {
     )
 }
 ```
+
+### Matrix
+The problem with the recursive algorithm is that it recomputes a lot of values.
+This is often the case with recursive algorithms. To make this point clear, we
+are going to write out the value `L(2,2)` symbolically. For this we assume that
+none of the letters are similar
+
+```
+L(2,2) = L(1, 2) + 1
+       + L(2, 1) + 1
+       + L(1, 1) + 1
+       = L(0, 2) + 1 + L(1, 1) + 1 + L(0, 1) + 1 + 1
+       + L(1, 1) + 1 + L(2, 0) + 1 + L(1, 0) + 1 + 1
+       + L(1, 1) + 1
+       = L(0, 2) + 3*L(1, 1) + L(2, 0) + L(0, 1) + L(1, 0) + 9
+```
+
+What we can learn from the last expression is that the value for `L(1,1)` is
+calculated three times. When larger indices are involved this problem only
+grows. With a recursive algorithm these values are recalculated over and over
+again.
+
+To remedy this is to keep intermediate results around for when they are needed
+again. On way of doing this is to setup a matrix that will keep score of all the
+intermediate results.
+
+Lets try our hand on an example. We will calculate the distance between `cat`
+and `dog`. We start out with a matrix. Along the first row we leave the first
+two columns blank and then we put each character of a string in its own column.
+We do something similar with the first column. We leave the first two rows blank
+and then place each character of the other string in its own row. It will look
+like this
+
+|     |  | `d` | `o` | `g` |
+|     |  |     |     |     |
+| `c` |  |     |     |     |
+| `a` |  |     |     |     |
+| `t` |  |     |     |     |
+
+When our algorithm is finished it will tell use what the Levenshtein distance is
+between any combination of prefixes for the two strings. E.g. if we would want
+to know the Levenshtein distance between `do` and `c`, we look down the column
+labeled `o` and across the row labeled `c`.
+
+The first row are column are left blank. This is because the empty string is a
+prefix of every other string. This nicely bootstraps our algorithm.
+
+We will now describe the algorithm by working out the example we started above.
+The first observation that we will use is that when one of the strings is empty,
+the Levenshtein distance is the length of the other string. This allows us to
+fill in the first row, and the first column. Since we will be working row-wise,
+we will forego filling in the column until we need it. 
+
+|     |   | `d` | `o` | `g` |
+|     | 0 | 1   | 2   | 3   |
+| `c` |   |     |     |     |
+| `a` |   |     |     |     |
+| `t` |   |     |     |     |
+
+The next observation we will use is that `L(m, n)` depends on `L(m-1, n)`,
+`L(m, n-1)` and `L(m-1, n-1)`. I.e. for a entry to be determined we need to look
+at the entry to left, at the entry above it and at the entry to above and to the
+left of it. Together with the observation that we know the first entry of each
+row, i.e. effectively the row index, we can fill in every entry row by row.
+
+|     |   | `d` | `o` | `g` |
+|     | 0 | 1   | 2   | 3   |
+| `c` | 1 | 1   | 2   | 3   |
+| `a` |   |     |     |     |
+| `t` |   |     |     |     |
+
+Would be the second row. Finish the algorithm gives us.
+
+|     |   | `d` | `o` | `g` |
+|     | 0 | 1   | 2   | 3   |
+| `c` | 1 | 1   | 2   | 3   |
+| `a` | 2 | 2   | 2   | 3   |
+| `t` | 3 | 3   | 3   | 3   |
+
+Telling us that the Levenshtein distance between `dog` and `cat` is 3.
 
 ## Exercises
 1. Calculate the Levenshtein distance between `kangaroo` and `koala`.
