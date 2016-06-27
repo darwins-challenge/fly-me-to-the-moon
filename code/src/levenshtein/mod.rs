@@ -32,7 +32,7 @@ fn minimum(a: u32, b: u32, c: u32) -> u32 {
     }
 }
 
-pub fn matrix(u : &str, v: &str) -> u32 {
+pub fn matrix(u: &str, v: &str) -> u32 {
     let m = u.len() + 1;
     let n = v.len() + 1;
     let mut matrix: Vec<Vec<u32>> = vec![vec![0; m]; n];
@@ -57,6 +57,37 @@ pub fn matrix(u : &str, v: &str) -> u32 {
     }
 
     matrix[n - 1][m - 1]
+}
+
+pub fn rows(u : &str, v: &str) -> u32 {
+    let m = u.len() + 1;
+    let n = v.len() + 1;
+    let mut a: Vec<u32> = vec![0; m];
+    let mut b: Vec<u32> = vec![0; m];
+
+    for column in 0..m {
+        a[column] = column as u32;
+    }
+
+    for row in 1..n {
+        b[0] = row as u32;
+        for column in 1..m {
+            let uc = u[(column - 1) .. column].chars().next();
+            let vc = v[(row - 1) .. row].chars().next();
+            let edit_cost = if uc == vc {0} else {1};
+
+            b[column] = minimum(
+                a[column    ] + 1,
+                b[column - 1] + 1,
+                a[column - 1] + edit_cost
+            );
+        }
+
+        a = b;
+        b = vec![0; m];
+    }
+
+    a[m-1]
 }
 
 #[cfg(test)]
@@ -116,6 +147,35 @@ mod tests {
         #[test]
         fn levenshtein_distance_of_kangaroo_koala() {
             assert_eq!(6, matrix("kangaroo", "koala"));
+        }
+    }
+
+    mod rows {
+        use super::super::*;
+
+        #[test]
+        fn levenshtein_of_empty_strings_is_zero() {
+            assert_eq!(0, rows("", ""));
+        }
+
+        #[test]
+        fn levenshtein_of_empty_strings_and_non_empty_string_is_length_of_non_empty_string() {
+            let string: &str = "Hello";
+
+            assert_eq!(string.len() as u32, rows(string, ""));
+            assert_eq!(string.len() as u32, rows("", string));
+        }
+
+        #[test]
+        fn levenshtein_distace_of_one_is_correctly_calculated() {
+            assert_eq!(1, rows("a", "ab"));
+            assert_eq!(1, rows("ba", "b"));
+            assert_eq!(1, rows("a", "b"));
+        }
+
+        #[test]
+        fn levenshtein_distance_of_kangaroo_koala() {
+            assert_eq!(6, rows("kangaroo", "koala"));
         }
     }
 }
