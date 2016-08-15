@@ -1,9 +1,12 @@
 strict graph {
        node [ shape = rectangle ]
        start [ label = "Do you want see results fast?" ]
-       overview [ label = "Do you want an overview?" ]
+       overview [ label = "Do you want an overview?" ] 
+
+       beagle [ label = "Tour of the Beagle" ]
        fast [ label = "Fast and Curious" ]
 
        start -- fast [ label = "yes" ]
        start -- overview [ label = "no" ]
+       overview -- beagle [ label = "yes" ]
 }
