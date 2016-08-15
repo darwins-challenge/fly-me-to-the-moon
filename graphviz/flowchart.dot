@@ -5,7 +5,7 @@ strict graph {
        gofast [ label = "Do you want see results fast?" ]
        overview [ label = "Do you want an overview?" ] 
 
-       beagle [ label = "Tour of the Beagle" ]
+       beagle [ label = "Jump aboard the Beagle" ]
        fast [ label = "Fast and Curious" ]
 
        start -- gofast
