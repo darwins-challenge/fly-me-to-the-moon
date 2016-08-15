@@ -1,0 +1,9 @@
+strict graph {
+       node [ shape = rectangle ]
+       start [ label = "Do you want see results fast?" ]
+       overview [ label = "Do you want an overview?" ]
+       fast [ label = "Fast and Curious" ]
+
+       start -- fast [ label = "yes" ]
+       start -- overview [ label = "no" ]
+}
