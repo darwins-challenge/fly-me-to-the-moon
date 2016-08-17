@@ -9,6 +9,6 @@ In case you are lost for directions, you can follow this handy flowchart. By
 answering questions you will be guided to a chapter of the book suited to your
 needs.
 
-![I have the book now what?](https://github.com/darwins-challenge/fly-me-to-the-moon/graphviz/flowchart.dot.png)
+![I have the book now what?](https://raw.githubusercontent.com/darwins-challenge/fly-me-to-the-moon/master/graphviz/flowchart.dot.png)
 
 [book]: https://leanpub.com/flymetothemoon/
