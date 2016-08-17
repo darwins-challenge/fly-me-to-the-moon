@@ -11,4 +11,4 @@ needs.
 
 ![I have the book now what?](https://github.com/darwins-challenge/fly-me-to-the-moon/graphviz/flowchart.dot.png)
 
-[book]: http://google.com/?q=fly-me-to-the-moon-leanpub
+[book]: https://leanpub.com/flymetothemoon/
