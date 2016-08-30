@@ -2,13 +2,20 @@ strict graph {
        node [ shape = rectangle ]
 
        start [ label = "Start" ]
+       try [ label = "Do you want to try before you buy" ]
+       involved [ label = "Do you want to be involved" ]
        gofast [ label = "Do you want see results fast?" ]
        overview [ label = "Do you want an overview?" ] 
 
        beagle [ label = "Jump aboard the Beagle" ]
+       play [ label = "Play the Game" ]
        fast [ label = "Fast and Curious" ]
 
-       start -- gofast
+       start -- try
+       try -- gofast [ label = "no" ]
+       try -- involved [ label = "yes" ]
+       involved -- gofast [ label = "no" ]
+       involved -- play [ label = "yes" ]
        gofast -- fast [ label = "yes" ]
        gofast -- overview [ label = "no" ]
        overview -- beagle [ label = "yes" ]
