@@ -4,3 +4,4 @@ Jump-aboard-the-Beagle.md
 Words.md
 Levenshtein-Distance.md
 Fast-and-the-Curious.md
+Play-the-Game.md
