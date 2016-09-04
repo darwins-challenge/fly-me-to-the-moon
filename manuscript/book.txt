@@ -5,3 +5,5 @@ Words.md
 Levenshtein-Distance.md
 Fast-and-the-Curious.md
 Play-the-Game.md
+Resources.md
+
