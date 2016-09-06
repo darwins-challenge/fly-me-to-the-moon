@@ -1,4 +1,4 @@
-# Play-the-Game
+# Appendix: Play the Game
 Sometimes you can only appreciate an achievement when you know how difficult it
 is. In order to set you expectations you can control a lander and try to land it
 safely on the surface of the moon.
