@@ -3,7 +3,7 @@ Paraphrase-Artificial-Intelligence.md
 Jump-aboard-the-Beagle.md
 Words.md
 Levenshtein-Distance.md
-Fast-and-the-Curious.md
 Resources.md
 Play-the-Game.md
+Fast-and-the-Curious.md
 
