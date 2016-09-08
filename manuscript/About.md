@@ -10,4 +10,20 @@ could implement them. It will provide you with a practical introduction to
 genetic programming and hones it with exercises, both pen and paper as
 implementation exercises.
 
+Each chapter will introduce ideas needed to create your own genetic programming
+environment, that can solve a certain problem. The ideas will be illustrated by
+three projects.
+
+1. [Nadezhda][cockroach] was the name of a cockroach sent into space to study
+   its behavior. Even though cockroaches have far more intricate behavior than
+   we attribute them during this problem, we like to stay in the space theme. 
+2. [AGC][agc] is an abbreviation for _Apollo's Guidance Computer_ that was
+   responsible for aiding in computations of guidance, navigation and control
+   of the space craft.
+3. [Lunar Lander][lunar] tries to land safely on the surface of the moon. The
+   catch is that you are giving control to a program that a computer wrote.
+
 [genetic-programming]: https://en.wikipedia.org/wiki/Genetic_programming
+[cockroach]: https://en.wikipedia.org/wiki/Nadezhda_(cockroach)
+[agc]: https://en.wikipedia.org/wiki/Apollo_Guidance_Computer
+[lunar]: http://moonlander.seb.ly/
