@@ -11,4 +11,8 @@ needs.
 
 ![I have the book now what?](https://raw.githubusercontent.com/darwins-challenge/fly-me-to-the-moon/master/graphviz/flowchart.dot.png)
 
+## Resources
+This book is accompanied by a set of [resources][]. Make sure to get a copy.
+
 [book]: https://leanpub.com/flymetothemoon/
+[resources]: https://s3.amazonaws.com/darwins-challenge/workshop.tar.gz
