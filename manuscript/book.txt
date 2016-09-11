@@ -1,5 +1,10 @@
 About.md
 Jump-aboard-the-Beagle.md
+Grammars.md
+AST.md
+Parsers.md
+Alea-Iacta-Est.md
+Environment.md
 Words.md
 Levenshtein-Distance.md
 Resources.md
