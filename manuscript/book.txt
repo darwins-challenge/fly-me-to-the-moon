@@ -1,5 +1,6 @@
 About.md
 Jump-aboard-the-Beagle.md
+Projects.md
 Grammars.md
 AST.md
 Parsers.md
