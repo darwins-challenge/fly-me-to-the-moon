@@ -63,3 +63,24 @@ rule again and apply it again, resulting in `aaAbb`. Next we choose the
 alternative production rule for `A`. I.e. `A -> B`, and apply it to `aaAbb`.
 This transforms into `aaBbb`. As a last application we choose the production
 rule `B -> ''` resulting in `aabb`, and we are finished.
+
+## Exercises
+1. Which of the following sequences can be derived from the non-terminal symbol
+   `A` given the grammar
+   
+   ```plain
+   A -> aAb
+      | B
+   B -> c
+      | ''
+   ```
+   
+   * ''
+   * c
+   * cc
+   * ab
+   * abb
+   * aab
+   * aabb
+   * aacbb
+   * aaccbb
