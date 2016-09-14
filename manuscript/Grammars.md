@@ -45,3 +45,21 @@ A -> aAb
 B -> c 
    | ''
 ```
+
+### How to play?
+We are discussing the grammar game, but we failed to mention how to play this
+game. The game is played by starting with a non terminal symbol. That will be
+are current sequence of symbols. Next we chose a non terminal symbol from our
+current sequence, find a production rule which has that symbol to the left of an
+arrow and _apply_ it. We apply it by replacing the occurrence of the left side
+of the arrow by the sequence of symbols to the right. This will give us a new
+current sequence and we can choose a new production rule. We continue as long as
+there are non-terminal symbols to choose from our current sequence of symbols.
+
+Let's work out an example. Take the grammar above. We start with the
+non-terminal symbol `A`. We choose the production rule `A -> aAb`. Applying it
+results in the follow sequence of symbols `aAb`. We choose the same production
+rule again and apply it again, resulting in `aaAbb`. Next we choose the
+alternative production rule for `A`. I.e. `A -> B`, and apply it to `aaAbb`.
+This transforms into `aaBbb`. As a last application we choose the production
+rule `B -> ''` resulting in `aabb`, and we are finished.
