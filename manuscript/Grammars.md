@@ -64,6 +64,10 @@ alternative production rule for `A`. I.e. `A -> B`, and apply it to `aaAbb`.
 This transforms into `aaBbb`. As a last application we choose the production
 rule `B -> ''` resulting in `aabb`, and we are finished.
 
+We call the act of applying production rules *deriving*, and when we come to a
+sequence of only terminal symbols, we say that this sequence can be derived from
+the non-terminal symbol we started with.
+
 ## Exercises
 1. Which of the following sequences can be derived from the non-terminal symbol
    `A` given the grammar
