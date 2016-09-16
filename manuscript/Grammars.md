@@ -100,3 +100,5 @@ virtual food supply.
    * aabb
    * aacbb
    * aaccbb
+2. For the Nadezhda grammar, is there a limit on the number of forward symbols
+   in a sequence that is derived?
