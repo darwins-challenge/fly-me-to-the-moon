@@ -68,6 +68,18 @@ We call the act of applying production rules *deriving*, and when we come to a
 sequence of only terminal symbols, we say that this sequence can be derived from
 the non-terminal symbol we started with.
 
+## Nadezhda
+For the Nadezhda project we are going to look into the following grammar.
+
+```plain
+S -> forward S
+  -> backward S
+  -> ''
+```
+
+This grammar models the decisions our robot cockroach will make in finding her
+virtual food supply.
+
 ## Exercises
 1. Which of the following sequences can be derived from the non-terminal symbol
    `A` given the grammar
