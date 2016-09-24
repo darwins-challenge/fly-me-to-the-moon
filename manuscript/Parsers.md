@@ -14,7 +14,6 @@ Creating parsers is a rich subject with very interesting nuances. We can largely
 avoid creating our own parser by leveraging the excellent parser of Rust.
 
 ## Domain Specific Language
-A
 [Domain Specific Language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL)
 is a 
 
@@ -28,3 +27,29 @@ of [macros](https://doc.rust-lang.org/book/macros.html).
 
 For an excellent treatment on DSL
 consult [Domain Specific Languages](http://martinfowler.com/books/dsl.html).
+
+## Nadezhda
+We will demonstrate how to create an internal DSL for the Nadezhda grammar.
+The Nadezhda grammar is defined as
+
+```plain
+Program -> forward Program
+         | backward Program
+         | stop
+```
+
+We would like to write something as close as possible to this structure. Ideally
+we would want `forward(forward(backward(stop)))`, to be a valid program. With
+Rust macros we can come close.
+
+Below you find a macro definition for the `forward` macro. Macros for `backward`
+and `stop` are similar.
+
+```rust
+#[macro_export]
+macro_rules! forward {
+    ($program: expr) => (Forward(Box::new($program)))
+}
+```
+
+It creates a `program` by wrapping a boxed contained program with a Forward tag.

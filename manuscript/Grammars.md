@@ -72,9 +72,9 @@ the non-terminal symbol we started with.
 For the Nadezhda project we are going to look into the following grammar.
 
 ```plain
-S -> forward S
-  -> backward S
-  -> ''
+Program -> forward Program
+  -> backward Program
+  -> stop
 ```
 
 This grammar models the decisions our robot cockroach will make in finding her
