@@ -6,6 +6,7 @@ AST.md
 Parsers.md
 Alea-Iacta-Est.md
 Environment.md
+Evaluate.md
 Words.md
 Levenshtein-Distance.md
 Resources.md
