@@ -7,6 +7,9 @@ Parsers.md
 Alea-Iacta-Est.md
 Environment.md
 Evaluate.md
+Fitness.md
+Population.md
+Darwin.md
 Words.md
 Levenshtein-Distance.md
 Resources.md
