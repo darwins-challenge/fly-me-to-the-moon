@@ -72,7 +72,23 @@ a. Everything before cut-point of A followed by everything after cut-point of B.
 b. Everything before cut-point of B followed by everything after cut-point of A.
 
 ### Evolve 
+Evolution is the culmination of our hard work. This ties in all the ingredients
+we have been exploring. The gist of evolution is
 
+1. Generate a random population.
+2. Until you are satisfied repeat.
+3. Create a successor population.
+
+A succession can be made in a number of ways, but variations do not seem to
+change the overall effect. Below we list some characteristic steps.
+
+1. Determine the fitness of the individuals in the generation.
+2. Pass top individuals directly into the next generation.
+3. Repeat until population is big enough
+
+a. Cross two parents and add children to the population.
+b. Mutate an individual and add to the population.
+c. A combination of the above.
 
 ## Exercises
 1. Implement a RandomDecision. I.e. implement the trait `MutateDecision` by
