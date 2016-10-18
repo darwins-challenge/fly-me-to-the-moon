@@ -58,6 +58,18 @@ impl Mutatable for Program {
 ```
 
 ### Crossover
+Crossover is combining the DNA of two parent to produce offspring. We will
+always use the two-for-two method. I.e. take two parents and produce two
+offspring.
+
+For the Nadezhda setting, the high level crossover algorithm is outlined below.
+We have parents A and B.
+
+1. Randomly chose a cut-points in programs A and B.
+2. The two children are
+
+a. Everything before cut-point of A followed by everything after cut-point of B.
+b. Everything before cut-point of B followed by everything after cut-point of A.
 
 ### Evolve 
 
@@ -66,3 +78,4 @@ impl Mutatable for Program {
 1. Implement a RandomDecision. I.e. implement the trait `MutateDecision` by
    performing a random decision.
 2. Can the mutate function shown change the length of a `Program`?
+3. Implement crossover for Nadezhda.
