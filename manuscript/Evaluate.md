@@ -51,3 +51,18 @@ impl Evaluator for Program {
     }
 }
 ```
+
+## Moonlander
+The only real difference with Nadezhda is that the moonlander has an external
+agent, i.e. the gravity of the moon, working on the lander. As such, after each
+decision the moonlander program makes, the world changes.
+
+Depending on the program, either the rotational speed is adjusted, a thruster is
+fired or nothing is done. Accordingly the orientation, the horizontal and
+vertical speeds are updated as well as the positions.
+
+Although it is somewhat laborious it is also straight forward once we know the
+relevant physics. 
+
+## Exercises
+1. Write an evaluator for AGC.
