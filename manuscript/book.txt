@@ -10,8 +10,6 @@ Evaluate.md
 Fitness.md
 Population.md
 Darwin.md
-Words.md
-Levenshtein-Distance.md
 Resources.md
 Play-the-Game.md
 Fast-and-the-Curious.md
