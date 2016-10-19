@@ -3,13 +3,16 @@ strict graph {
 
        start [ label = "Start" ]
        try [ label = "Do you want to try before you buy" ]
-       involved [ label = "Do you want to be involved" ]
+       involved [ label = "Do you want play" ]
        gofast [ label = "Do you want see results fast?" ]
        overview [ label = "Do you want an overview?" ] 
+       suggestion [ label = "Do you need project suggestions?" ]
 
        beagle [ label = "Jump aboard the Beagle" ]
        play [ label = "Play the Game" ]
        fast [ label = "Fast and Curious" ]
+       projects [ label = "What to Do" ]
+       fun [label = "Fun" ]
 
        start -- try
        try -- gofast [ label = "no" ]
@@ -19,4 +22,7 @@ strict graph {
        gofast -- fast [ label = "yes" ]
        gofast -- overview [ label = "no" ]
        overview -- beagle [ label = "yes" ]
+       overview -- suggestion [ label = "no" ]
+       suggestion -- projects [ label = "yes" ]
+       suggestion -- fun [ label = "no" ]
 }
