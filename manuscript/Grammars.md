@@ -80,6 +80,14 @@ Program -> forward Program
 This grammar models the decisions our robot cockroach will make in finding her
 virtual food supply.
 
+## Moonlander
+The moonlander grammar is fairly involved. It is responsible for expression
+control logic for the lander. As such it is capable of making _decisions_ based
+on _calculations_ involving _sensor readings_.
+
+Listing the entire grammar would take up a lot of space. It is best to inspect
+the grammar from the code.
+
 ## Exercises
 1. Which of the following sequences can be derived from the non-terminal symbol
    `A` given the grammar
@@ -102,3 +110,4 @@ virtual food supply.
    * aaccbb
 2. For the Nadezhda grammar, is there a limit on the number of forward symbols
    in a sequence that is derived?
+3. Create a grammar that is capable of expressing calculations.
