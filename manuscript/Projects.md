@@ -7,12 +7,15 @@ along a line. Each turn it either takes a step forward, takes a step backwards,
 or stops.
 
 The goal of the cockroach is to reach a supply of food somewhere along the line.
+Its performance is measured by the distance to the food source.
 
 ## AGC
 In this project we are modeling doing calculations with a single variable. One
 example would be {$$}3x + 5{/$$}.
 
-The goal is to match a series of function values as closely as possible
+The goal is to match a series of function values as closely as possible. This
+project is one that you could try to implement yourself, guided by exercises in
+this book.
 
 ## Moonlander
 This is the ultimate project. The goal for this project is to safely land a
