@@ -57,13 +57,7 @@ pub enum Program {
 }
 ```
 
-## Moonlander
-The translation of the Nadezhda grammar teaches us everything there is to know
-for us to translate the moonlander grammar into abstract syntax trees. Taking a
-look at the source, there a little, if any, surprises.
-
 ## Exercises
 1. What would be other options to appease the Rust compiler when building
    recursive types? How would that differ from using `Box`.
 2. Is `stop` necessary in the Nadezhda grammar?
-3. Expression the AGC grammar as an abstract syntax tree.
