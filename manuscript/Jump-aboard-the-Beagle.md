@@ -41,10 +41,13 @@ Below we have some suggestions on what to read next.
 If you are interested int grammars, abstract syntax trees, and parsers, read the
 corresponding chapters.
 
-Curious about how to create random individuals go to the Alea Iacta Est chapter.
+Curious about how to create random individuals go to the Random Generation of
+AST chapter. 
 
 To learn about the environment and how to simulate it head over to the
 environment chapter.
+
+If you want to learn about the framework, go to the framework chapter.
 
 [^beagle]: The [HMS Beagle](https://en.wikipedia.org/wiki/HMS_Beagle) was the
     ship that took
