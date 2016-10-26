@@ -15,4 +15,5 @@ Resources.md
 Play-the-Game.md
 Fast-and-the-Curious.md
 What-To-Do.md
+AGC.md
 Fun.md
