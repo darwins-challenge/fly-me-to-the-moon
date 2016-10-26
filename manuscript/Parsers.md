@@ -56,10 +56,5 @@ It creates a `program` by wrapping a boxed contained program with a Forward tag.
 This allows use to write our intentions as close to our desires as Rust allows
 us.
 
-## Moonlander
-Although it is more involved to create a macros for the moonlander grammar. It
-isn't complicated.
-
 ## Exercises
-1. Write macros that express the AGC language
-2. What benefits does an internal DSL have over an external DSL?
+1. What benefits does an internal DSL have over an external DSL?
