@@ -49,10 +49,10 @@ impl rand::Rand for Program {
 Note that for the `Forward` and `Backward` alternative we need to also create a
 nested program that will be wrapped.
 
-## Moonlander
-In generating random moonlander programs one quickly encounters a problem. The
-problem manifest itself in occasional stack overflows. In order to examine the
-problem we are taking a closer look at the heart of the problem.
+## Generating more complex grammars
+In generating random programs one quickly encounters a problem. The problem
+manifest itself in occasional stack overflows. In order to examine the problem
+we are taking a closer look at the heart of the problem.
 
 Take a look at the following grammar
 
@@ -93,6 +93,5 @@ diverges. I.e. the expected number of nodes and leafs will be infinite.
 
 ## Exercises
 1. What is the expected length of a randomly generated Nadezhda program.
-2. Create a means to generate random AGC programs.
-3. When writing generators it gets tedious to constantly write the same
+2. When writing generators it gets tedious to constantly write the same
    boilerplate code. Alleviate this nuisance by writing a macro.
