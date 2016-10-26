@@ -10,6 +10,7 @@ Evaluate.md
 Fitness.md
 Population.md
 Darwin.md
+Framework.md
 Resources.md
 Play-the-Game.md
 Fast-and-the-Curious.md
