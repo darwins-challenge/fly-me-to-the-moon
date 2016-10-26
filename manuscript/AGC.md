@@ -1,12 +1,14 @@
 # AGC
+With the use of the framework getting started with genetic programming comes
+down to the following steps
 
+1. Describe a grammar.
+2. Describe a fitness function.
 
-3. Expression the AGC grammar as an abstract syntax tree.
-1. Write macros that express the AGC language
-2. Create a means to generate random AGC programs.
+The only thing you need is a good description of the problem.
 
-1. What kind of environment is appropriate for AGC?
-
-1. Write an evaluator for AGC.
-
-3. How would you score an AGC program?
+## Description
+We want polynomial function like {$$}3x^{2}+2x+1{/$$} that will fit values. More
+specifically given {$$}n{/$$} values, e.g $3, 1, 4, 1, 5$, the target function
+{$$}f{/$$} should the {$$}i{/$$}th value when evaluating {$$}i{/$$}, i.e.
+{$$}f(0) = 3{/$$}, {$$}f(1) = 1{/$$} etcetera.
