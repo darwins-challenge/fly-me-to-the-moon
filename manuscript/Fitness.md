@@ -38,14 +38,7 @@ impl ScoreCard for Config {
 }
 ```
 
-## Moonlander
-Seeing that the fitness function is of such importance. We would like to
-challenge the reader to come up with a good fitness function for herself. 
-
 ## Exercises
 1. Determine the program length of a Nadezhda program and include it in the score.
 2. How would you extend the Nadezhda ScoreCard to include weight factors for the
    different parts of the score?
-3. How would you score an AGC program?
-4. Write a fitness function for Moonlander programs and explore what differences
-   is has on the evolution.

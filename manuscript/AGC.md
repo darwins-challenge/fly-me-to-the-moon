@@ -8,3 +8,5 @@
 1. What kind of environment is appropriate for AGC?
 
 1. Write an evaluator for AGC.
+
+3. How would you score an AGC program?
