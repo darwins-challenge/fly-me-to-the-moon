@@ -10,9 +10,9 @@ could implement them. It will provide you with a practical introduction to
 genetic programming and hones it with exercises, both pen and paper as
 implementation exercises.
 
-Each chapter will introduce ideas needed to create your own genetic programming
-environment, that can solve a certain problem. The ideas will be illustrated by
-three projects.
+Each chapter will introduce ideas needed to create your own, or work with a,
+genetic programming environment, that can solve a certain problem. The ideas
+will be illustrated by the following projects.
 
 1. [Nadezhda][cockroach] was the name of a cockroach sent into space to study
    its behavior. Even though cockroaches have far more intricate behavior than
