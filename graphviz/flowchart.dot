@@ -12,7 +12,7 @@ strict graph {
        play [ label = "Play the Game" ]
        fast [ label = "Fast and Curious" ]
        projects [ label = "What to Do" ]
-       fun [label = "Fun" ]
+       own [label = "Bring your own" ]
 
        start -- try
        try -- gofast [ label = "no" ]
@@ -24,5 +24,5 @@ strict graph {
        overview -- beagle [ label = "yes" ]
        overview -- suggestion [ label = "no" ]
        suggestion -- projects [ label = "yes" ]
-       suggestion -- fun [ label = "no" ]
+       suggestion -- own [ label = "no" ]
 }
