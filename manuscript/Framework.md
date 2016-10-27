@@ -3,7 +3,7 @@
 Up until now, we've done everything by hand. You might notice that some of the
 work is applicable, such as generating a random population of trees, and
 applying reproduction, crossover and mutation to build new generations is
-applicable to every genetic programming task.
+to every genetic programming task.
 
 To help you solve genetic programs quickly, we've wrapped up most of the
 machinations necessary to abstract these concerns away into a library. We're
@@ -32,7 +32,7 @@ To use the framework, you'll need to supply two things of your own:
 ## Framework Traits
 
 To work with ASTs in a generic way, we've had to implement quite some traits in
-Rust. We'll quickly take you through them, before explaining that won't need to
+Rust. We'll quickly take you through them, before explaining that we won't need to
 implement most of them yourself.
 
 An important constraint for many of these traits is that concrete type
