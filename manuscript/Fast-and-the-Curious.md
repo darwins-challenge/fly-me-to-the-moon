@@ -20,7 +20,7 @@ cargo run --release ../moonlander-ast/
 
 Follow the programs instruction to open `localhost:8080` in a browser. To view a
 trace of a run of evolution, open the load trace tab. Search for the
-`fast-furious,json` file, hit the `load` button. A list of generations can be
+`fast-furious.json` file, hit the `load` button. A list of generations can be
 seen. Click on one of them to see the performance of the moonlander. To see
 later generations reload the `fast-furious.json` file.
 
