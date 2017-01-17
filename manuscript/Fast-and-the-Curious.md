@@ -7,7 +7,7 @@ Change directory to the `help` directory and use cargo to build
 the `evolve_condition` example.
 
 ```shell
-cargo run --release --example evolve_condition 1_fixed_vertical_landing.toml > fast-furious.json
+cargo run --release --example evolve_condition 1a_fixed_vertical_landing.toml > fast-furious.json
 ```
 
 Wait for the run to start and head over to the `moonlander-visualisation`
