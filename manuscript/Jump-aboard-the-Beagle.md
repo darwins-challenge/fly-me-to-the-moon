@@ -5,7 +5,7 @@ applies to the projects we are studying.
 ## Evolution
 Evolution tracks a *population* over time in their *environment*. A population
 consists of *individuals*. Individuals differ by there *genetic makeup*.
-The survival of the genetic makeup of a individuals is determined by their
+The survival of the genetic makeup of an individual is determined by their
 *fitness*, i.e. how well they are adapted to their environment. Individuals that
 are fitter, have a higher chance of reproducing, allowing their genetic makeup
 to prosper.
