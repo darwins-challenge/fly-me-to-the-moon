@@ -17,7 +17,7 @@ avoid creating our own parser by leveraging the excellent parser of Rust.
 [Domain Specific Language](https://en.wikipedia.org/wiki/Domain-specific_language) (DSL)
 is a 
 
-> is a computer language specialized to a particular application domain.
+> computer language specialized to a particular application domain.
 
 We will make use of a _internal DSL_, i.e. a DSL embedded in Rust. This will
 save us work, because we are leveraging the Rust parser.
