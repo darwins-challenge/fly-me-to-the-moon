@@ -52,7 +52,7 @@ macro_rules! forward {
 }
 ```
 
-It creates a `program` by wrapping a boxed contained program with a Forward tag.
+It creates a `program` by wrapping a boxed contained program with a `Forward` tag.
 This allows use to write our intentions as close to our desires as Rust allows
 us.
 
