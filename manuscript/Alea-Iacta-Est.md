@@ -82,7 +82,7 @@ E = p \cdot (1 + 2E) + q \cdot 1
 Because for each `node` there is 1 extra node plus for the left and right
 branches two times the expected number of nodes and leafs, and for each `leaf`
 there is one extra leaf. Using the relation {$$}q = 1 - p{/$$} and solving for
-{$$}E{$$} we get
+{$$}E{/$$} we get
 
 {$$}
 E = \frac{1}{1 - 2p} = \frac{1}{2q - 1}
