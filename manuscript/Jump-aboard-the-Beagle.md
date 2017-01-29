@@ -38,16 +38,20 @@ determine their relative fitness.
 ## Further reading
 Below we have some suggestions on what to read next.
 
-If you are interested int grammars, abstract syntax trees, and parsers, read the
-corresponding chapters.
+If you want to learn how to genetic programming works by and studying the nitty
+gritty details, work through all the chapters up to `A Framework for Genetic
+Programming`. It will teach you everything you need to know to work with, or
+create your own, genetic programming framework.
 
-Curious about how to create random individuals go to the Random Generation of
-AST chapter. 
+If you want to work on the `AGC` project, or work on your own problem, go to the
+`A Framework for Genetic Programming` chapter. It explains how to use the
+framework on the problem of landing a lunar lander on the surface of the moon.
+It is an ideal stomping ground to learn about the framework for your own use.
 
-To learn about the environment and how to simulate it head over to the
-environment chapter.
-
-If you want to learn about the framework, go to the framework chapter.
+If you want to construct good fitness functions in order to let the lunar lander
+land safely on the surface of the moon, head over to `Tweak Fitness Functions`.
+There you can try to guide the safe landing of the lunar lander, by writing the
+fitness function.
 
 [^beagle]: The [HMS Beagle](https://en.wikipedia.org/wiki/HMS_Beagle) was the
     ship that took
