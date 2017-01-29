@@ -29,7 +29,7 @@ impl ScoreCard for Config {
     fn score (&self, program: Program, environment: Environment) -> Score {
         let result = program.evaluate_on(environment);
         let score = 
-            (result.cockraoch_location - result.food_location)
+            (result.cockroach_location - result.food_location)
             .abs()
             .pow(2);
             
