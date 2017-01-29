@@ -7,6 +7,7 @@ Here we give some suggestions for projects you could do
 4. Bring your Own
 
 ## Straight Landing
+
 ### First scenario
 The lander starts at a fixed height, without any rotation, and needs to
 successfully land. To solve this scenario, it suffices to evaluate a `Condition`
@@ -23,6 +24,7 @@ scenario, the lander starts at a random height.
 Does your model still evolve a successful solution?
 
 ## With a Twist
+
 ### First scenario
 In the preceding project, the lander always started upright. In this
 project, it will start at angle.
